@@ -35,6 +35,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
   min-height: 100vh;
 }
 
@@ -59,6 +60,7 @@ body {
   background: var(--left-side);
   padding: 40px;
 }
+
 
 .text {
   color: #ffffff;
@@ -113,7 +115,7 @@ body {
 }
 
 .contactInfo {
-  padding-top: 40px;
+  padding-top: 100px;
 }
 
 .title {
@@ -125,7 +127,7 @@ body {
   margin-bottom: 20px;
 }
 
-contactInfo ul {
+.contactInfo ul {
   position: relative;
 }
 
@@ -144,6 +146,7 @@ contactInfo ul {
   font-size: 18px;
   color: var(--icons);
 }
+
 
 .contactInfo ul li span {
   color: #fff;
@@ -292,7 +295,20 @@ p {
 
 @media (max-width: 1000px) {
   .container {
+    transform: scale(0.73);
+
+    position: relative;
+    bottom: 200px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    position: unset;
+    transform: unset;
+
     margin: 10px;
+
     grid-template-columns: 1fr;
   }
 }
