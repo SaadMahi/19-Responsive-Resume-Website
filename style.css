@@ -61,9 +61,9 @@ body {
   padding: 40px;
 }
 
-
 .text {
   color: #ffffff;
+  text-decoration: none;
 }
 
 .profileText {
@@ -115,7 +115,8 @@ body {
 }
 
 .contactInfo {
-  padding-top: 100px;
+  /* padding-top: 100px; */
+  padding-top: 10px;
 }
 
 .title {
@@ -146,7 +147,6 @@ body {
   font-size: 18px;
   color: var(--icons);
 }
-
 
 .contactInfo ul li span {
   color: #fff;
@@ -190,10 +190,18 @@ body {
   background: var(--lang-bar);
 }
 
+.contactInfo-language ul li {
+  list-style: none;
+}
+
 .container .right_side {
   position: relative;
   background: var(--right-side);
   padding: 40px;
+}
+
+.profile-text{
+  text-align: justify;
 }
 
 .about {
@@ -236,6 +244,21 @@ p {
   text-transform: uppercase;
   color: var(--role);
   font-size: 16px;
+}
+
+.text span i{
+  display: inline-block;
+  width: 20px;
+  font-size: 18px;
+  color: var(--icons);
+  margin-right: .50rem;
+}
+
+
+
+
+.text span a{
+  color: var(--left-side);
 }
 
 .skills .box {
